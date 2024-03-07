@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Website</title>
+</head>
+<body>
+    <div class="container">
+        <img src="" alt="Centered Image">
+    </div>
+</body>
+</html>
+<style>
+/* General styles for all screen sizes */
+body {
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Specific styles for screens up to 900px wide */
+@media only screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
+</style>
